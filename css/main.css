@@ -84,16 +84,23 @@ button:active {
 }
 
 .row {
+
   max-width: 100%;
-  padding: 10px 10px 40px 10px;
+  padding: 10px 10px 50px 10px;
 }
 
 
 .row .vimeo {
+    width: 60%;
     max-width: 640px;
 }
 .row .soundcloud {
+    width: 60%;
     max-width: 640px;
+}
+
+.last-row {
+    margin-bottom: 10vh;
 }
 
 .caption {
@@ -102,6 +109,7 @@ button:active {
     line-height: 17px;
     letter-spacing: -0.45px;
     display: inline-block;
+    
 }
 
 .caption h3 {
@@ -112,9 +120,44 @@ button:active {
     text-transform: uppercase;
 }
 .caption p {
-    margin: 0 0 20px 0;
+    margin: 0 0 0px 0;
     padding: 0;
-    width: 400px;
+    width: 560px;
+}
+
+@media (max-width: 920px) {
+    .row .vimeo {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .row .soundcloud {
+        width: 80%;
+        max-width: 80%;
+    }
     
 }
+
+@media (max-width: 640px) { 
+
+    .caption p {
+       width: auto;
+    }
+
+    .row .vimeo {
+        width: 100%;
+    }
+
+    .row .soundcloud {
+        width: 100%;}
+    
+}
+
+@media (max-width: 400px) { 
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
 
