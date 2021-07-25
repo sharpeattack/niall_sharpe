@@ -16,6 +16,7 @@ body{
     background-color: white;
     color: #212121;
     margin: 10px 0 0 0;
+    
 
     display: flex;
     justify-content: space-between;
@@ -82,16 +83,6 @@ button:active {
     transform: scale(0.99);
 }
 
-
-
-
-
-
-
-
-
-
-
 .row {
   max-width: 100%;
   padding: 10px 10px 40px 10px;
@@ -118,6 +109,7 @@ button:active {
     padding: 0;
     font-weight: 600;
     color: #000;
+    text-transform: uppercase;
 }
 .caption p {
     margin: 0 0 20px 0;
