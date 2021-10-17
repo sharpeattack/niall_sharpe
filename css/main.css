@@ -11,11 +11,11 @@ body{
 }
 
 .header {
-    padding: 10px;
+    padding: 10px 10px 20px 40px;
     width: auto;
     background-color: white;
     color: #212121;
-    margin: 10px 0 0 0;
+    margin: 10px 0 35px 0;
     
 
     display: flex;
@@ -52,11 +52,12 @@ h1{
     display: inline-block;
     border: 1px solid #212121;
     border-radius: 2px;
-    padding: 5px 12px;
+    padding: 10px 16px;
     margin: 0px 0 00px 0px;
     text-decoration: none;
-    background: #fff;
-    color: #212121;
+    text-transform: uppercase;
+    background: #212121;
+    color: #ffffff;
     font-family: sans-serif;
     font-size: 15px;
     cursor: pointer;
@@ -75,8 +76,8 @@ button:focus {
 }
 
 button:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
+    outline: 2px solid #212121;
+    outline-offset: -2px;
 }
 
 button:active {
@@ -86,7 +87,7 @@ button:active {
 .row {
 
   max-width: 100%;
-  padding: 10px 10px 50px 10px;
+  padding: 10px 10px 75px 40px;
 }
 
 
@@ -113,7 +114,7 @@ button:active {
 }
 
 .caption h3 {
-    margin: 20px 0 10px 0;
+    margin: 20px 0 5px 0;
     padding: 0;
     font-weight: 600;
     color: #000;
@@ -123,6 +124,31 @@ button:active {
     margin: 0 0 0px 0;
     padding: 0;
     width: 560px;
+}
+
+.footer {
+    /* width: 100%; */
+    background-color: black;
+    padding: 50px 40px;
+    font-size: 20px;
+    color: white;
+}
+.footer ul {
+    padding:0% 0;
+}
+
+.footer h1, ul, a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul a:hover {
+    text-decoration: underline;
+    font-weight: 400;
+}
+.footer ul li {
+    padding: 5px 0;
 }
 
 @media (max-width: 920px) {
@@ -140,10 +166,17 @@ button:active {
 
 @media (max-width: 640px) { 
 
+    .header {
+        padding: 10px 10px 15px;
+        margin: 10px 0 15px 0
+    }
+
     .caption p {
        width: auto;
     }
-
+    .row{
+        padding: 10px 10px 75px 10px;
+    }
     .row .vimeo {
         width: 100%;
         max-width: 100%;
